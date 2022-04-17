@@ -9,7 +9,7 @@ const lengthOfLongestSubstring = (str) => {
     // vị trí kết thúc 
     let end = 0;
     // biến lưu trữ chuỗi các ký tự không trùng nhau
-    const uniqueCharacters = new Set();
+    let uniqueCharacters = new Set();
     // độ dài lớn nhất của chuỗi con không trùng nhau
     let maxLength = 0;
     // quét từng ký tự trong chuỗi
@@ -44,5 +44,5 @@ const lengthOfLongestSubstring = (str) => {
     return maxLength;
 };
 
-var str = 'abcdabcde';
+const str = 'abcdabcde';
 console.log(lengthOfLongestSubstring(str));
